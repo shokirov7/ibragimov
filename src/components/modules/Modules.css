@@ -1,0 +1,30 @@
+.modules_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.modules_title {
+  color: #dedede;
+  text-align: center;
+  font-family: Arial;
+  font-size: 85px;
+  font-weight: 900;
+}
+.modules_title2 {
+  width: 45rem;
+  text-align: center;
+  font-family: Arial;
+  font-size: 41px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.modules_title3 {
+  color: #dedede;
+  text-align: center;
+  font-family: inter;
+  font-size: 18px;
+}

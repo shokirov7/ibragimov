@@ -1,0 +1,52 @@
+.courses_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.courses_title {
+  color: #fff;
+  font-family: Arial;
+  font-size: 47.373px;
+  font-weight: 900;
+}
+.courses_block {
+  position: relative;
+  width: 495px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #202020;
+}
+.courses_or {
+  color: #fff;
+  text-align: center;
+  font-family: Arial;
+  font-size: 35px;
+  font-weight: 900;
+}
+.courses_block_title {
+  font-family: Arial;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(255, 133, 98);
+  margin-bottom: 25px;
+}
+.courses_block_number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  font-family: Arial;
+  font-weight: 500;
+  color: #3c3c3c;
+  user-select: none;
+}
+.courses_block_par {
+  color: #fff;
+  font-family: inter;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}

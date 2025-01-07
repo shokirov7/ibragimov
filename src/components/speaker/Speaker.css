@@ -1,0 +1,55 @@
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../img/ibragimov2.png);
+  height: 1100px;
+  background-size: cover;
+  background-position: top;
+}
+.speaker_title {
+  font-family: Arial;
+  font-size: 55px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.speaker_name {
+  color: #fff;
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 900;
+}
+.merits_container {
+  margin-top: 6rem;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(1fr);
+  grid-column-gap: 20rem;
+  grid-row-gap: 3rem;
+}
+.merits_container span {
+  color: #fff;
+  font-family: ouvality;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 900;
+}
+.merit1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+.merit2 {
+  grid-area: 1 / 3 / 3 / 5;
+}
+.merit3 {
+  grid-area: 3 / 2 / 5 / 4;
+}
+.merits_container span span {
+  background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
