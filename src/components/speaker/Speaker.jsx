@@ -6,7 +6,7 @@ function Speaker() {
     <div className="speaker">
       <h1 className="speaker_title">Спикер курса</h1>
       <h2 className="speaker_name">Жалолиддин Ибрагимов</h2>
-      <p className="merits_container">
+      <span className="merits_container">
         <span className="merit1">
           3+ <span>года</span> опыта
         </span>
@@ -14,7 +14,7 @@ function Speaker() {
         <span className="merit3">
           Более <span>10 млн</span> просмотров в <span>Reels</span>
         </span>
-      </p>
+      </span>
     </div>
   );
 }

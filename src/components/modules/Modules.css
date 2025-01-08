@@ -1,8 +1,13 @@
+.modules {
+  position: relative;
+}
 .modules_container {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  z-index: 2;
 }
 .modules_title {
   color: #dedede;
@@ -27,4 +32,76 @@
   text-align: center;
   font-family: inter;
   font-size: 18px;
+}
+.module_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.module {
+  width: 55rem;
+  border-radius: 15px;
+  background: #202020;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+.module:hover {
+  border: 2px solid #eb62b6;
+}
+.module.active {
+  border: 2px solid #eb62b6;
+  box-shadow: 0px 4px 50px 0px rgba(223, 72, 216, 0.6);
+}
+.module_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+.module_name {
+  color: #fff;
+  font-family: inter;
+  font-size: 18px;
+}
+.module_icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.module_top:hover .module_icon {
+  background: #3c3c3c;
+}
+.module_bottom {
+  padding: 0 20px;
+}
+.module_stages,
+.module_theme {
+  margin-left: 15px;
+}
+.module_theme {
+  margin-bottom: 10px;
+}
+.module_stages,
+.module_desc {
+  margin-bottom: 24px;
+}
+.module_stages li,
+.module_desc {
+  color: #dedede;
+  font-family: inter;
+  font-size: 15px;
+}
+.module_stages li {
+  line-height: 24px;
+}
+.module_theme {
+  color: #dedede;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 15px;
 }
