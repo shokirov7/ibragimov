@@ -94,7 +94,7 @@ function Modules() {
             >
               <div className="module_top" onClick={() => toggle(i)}>
                 <h1 className="module_name">{e.name}</h1>
-                <div className="module_icon">
+                <div className={selected === i ? 'module_icon active' : 'module_icon'}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"

@@ -72,9 +72,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: all .3s;
+}
+.module_icon.active{
+  rotate: -180deg;
 }
 .module_top:hover .module_icon {
-  background: #3c3c3c;
+  background: #565656;
 }
 .module_bottom {
   padding: 0 20px;
