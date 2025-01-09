@@ -78,6 +78,7 @@ function Modules() {
   const toggle = (i) => {
     setSelected((prev) => (prev === i ? null : i));
   };
+console.log(modules);
 
   return (
     <div className="modules">
