@@ -6,6 +6,7 @@ import Ways from "../../components/ways/Ways";
 import Courses from "../../components/courses/Courses";
 import Modules from "../../components/modules/Modules";
 import Price from "../../components/price/Price";
+import Plans from "../../components/plans/Plans";
 
 function Home() {
   return (
@@ -21,6 +22,8 @@ function Home() {
       <Modules />
       <div className="glow_line"></div>
       <Price />
+      <div className="glow_line glow_line_mod"></div>
+      <Plans />
     </div>
   );
 }

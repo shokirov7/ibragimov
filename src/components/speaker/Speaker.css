@@ -8,9 +8,8 @@
   background-position: top;
 }
 .speaker_title {
-  font-family: Arial;
+  font-family: gilroy-extra;
   font-size: 55px;
-  font-weight: 900;
   background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -19,9 +18,8 @@
 .speaker_name {
   color: #fff;
   text-align: center;
-  font-family: Arial;
+  font-family: gilroy-extra;
   font-size: 30px;
-  font-weight: 900;
 }
 .merits_container {
   margin-top: 6rem;

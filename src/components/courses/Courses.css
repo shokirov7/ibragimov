@@ -6,9 +6,8 @@
 }
 .courses_title {
   color: #fff;
-  font-family: Arial;
+  font-family: gilroy-extra;
   font-size: 47.373px;
-  font-weight: 900;
 }
 .courses_block {
   position: relative;
@@ -20,16 +19,14 @@
 .courses_or {
   color: #fff;
   text-align: center;
-  font-family: Arial;
+  font-family: gilroy-extra;
   font-size: 35px;
-  font-weight: 900;
 }
 .courses_block_title {
-  font-family: Arial;
+  font-family: gilroy-semi;
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 600;
   color: rgb(255, 133, 98);
   margin-bottom: 25px;
 }
@@ -38,8 +35,7 @@
   top: 20px;
   right: 20px;
   font-size: 24px;
-  font-family: Arial;
-  font-weight: 500;
+  font-family: gilroy-med;
   color: #3c3c3c;
   user-select: none;
 }

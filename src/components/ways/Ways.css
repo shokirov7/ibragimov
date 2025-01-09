@@ -10,11 +10,10 @@
 .ways_title {
   width: 46rem;
   color: #fff;
-  font-family: Arial;
+  font-family: gilroy-extra;
   text-align: center;
   font-size: 47px;
   font-style: normal;
-  font-weight: 900;
 }
 .ways_title span {
   background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
@@ -36,14 +35,12 @@
 .ways_or {
   color: #fff;
   text-align: center;
-  font-family: Arial;
+  font-family: gilroy-extra;
   font-size: 44px;
-  font-weight: 900;
 }
 .ways_step_priority {
   position: relative;
-  font-family: Arial;
-  font-weight: 900;
+  font-family: gilroy-extra;
   padding: 78px 99px;
   font-size: 40px;
   text-align: center;

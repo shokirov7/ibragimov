@@ -29,6 +29,22 @@ a {
   font-family: arch;
   src: url(./assets/fonts/ArchivoBlack-Regular.ttf);
 }
+@font-face {
+  font-family: bebas;
+  src: url(./assets/fonts/BebasNeue.ttf);
+}
+@font-face {
+  font-family: gilroy-extra;
+  src: url(./assets/fonts/Gilroy-ExtraBold.ttf);
+}
+@font-face {
+  font-family: gilroy-semi;
+  src: url(./assets/fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: gilroy-med;
+  src: url(./assets/fonts/Gilroy-Medium.ttf);
+}
 body {
   overflow-x: hidden;
 }

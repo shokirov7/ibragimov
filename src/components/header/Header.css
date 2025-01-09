@@ -38,9 +38,8 @@
   margin-top: 3rem;
   width: 670px;
   color: #fff;
-  font-family: Arial;
+  font-family: gilroy-extra;
   font-size: 62px;
-  font-weight: 900;
   line-height: 65px;
 }
 .header_title span:first-child {
@@ -68,10 +67,9 @@
 .header_button a {
   color: #fff;
   text-align: center;
-  font-family: Arial;
+  font-family: gilroy-extra;
   font-size: 18px;
   font-style: normal;
-  font-weight: 900;
   border-radius: 10px;
   background: #7638fb;
   box-shadow: 0px 0px 200px 0px #7638fb;

@@ -38,8 +38,7 @@
 .price_title7 span,
 .price_title8 span {
   text-align: center;
-  font-family: Arial;
-  font-weight: 900;
+  font-family: gilroy-extra;
   font-size: 50px;
   background: linear-gradient(90deg, #fcbd83 2%, #fc8385 45%, #d93ce8 100%);
   background-clip: text;
@@ -58,9 +57,7 @@
 .price_title7 {
   width: 50rem;
   text-align: center;
-  /* border: 1px solid red; */
-  font-family: Arial;
-  font-weight: 900;
+  font-family: gilroy-extra;
   font-size: 40px;
   color: #fff;
 }
@@ -69,8 +66,7 @@
 }
 .price_title8 {
   text-align: center;
-  font-family: Arial;
-  font-weight: 900;
+  font-family: gilroy-extra;
   width: 45rem;
   font-size: 40px !important;
 }

@@ -1,0 +1,218 @@
+.plans {
+  position: relative;
+}
+.plans_bg {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  filter: blur(400px);
+  background: linear-gradient(90deg, #f300bf 0%, #d93ce8 100%);
+}
+.plans_title {
+  color: #fff;
+  text-align: center;
+  font-family: gilroy-extra;
+  font-size: 60px;
+  margin-bottom: 7rem;
+}
+.plans_wrapper {
+  position: relative;
+  z-index: 1;
+}
+.plans_container {
+  max-width: 1155px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 27px;
+}
+.plan {
+  position: relative;
+  color: #fff;
+  border-radius: 13px;
+  border: 1px solid #7a7a7a;
+  padding: 88px 22px 18px 22px;
+}
+.plan_platinum {
+  border: 1px solid #ffffff;
+}
+.plan_name {
+  position: absolute;
+  top: -51.5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  font-family: bebas;
+  text-transform: uppercase;
+  font-size: 70px;
+  padding: 13px 17px;
+  text-align: center;
+  background: linear-gradient(180deg, #a51589, #440839);
+  border-radius: 17px;
+  z-index: 1;
+}
+.plan:nth-child(2) .plan_name {
+  background: linear-gradient(180deg, #7a00f9, #4c009b);
+}
+.plan:nth-child(3) .plan_name {
+  background: linear-gradient(180deg, #1551a7, #080c44);
+}
+.plan_subtitle {
+  height: 46px;
+  color: #fff;
+  text-align: center;
+  font-family: inter;
+  font-size: 16px;
+  margin-bottom: 29px;
+}
+.plan_subtitle span {
+  text-align: center;
+  font-family: gilroy-semi;
+  font-size: 16.453px;
+  background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.plan_desc {
+  margin-bottom: 2rem;
+}
+.plan_desc_title,
+.plan_inside_title {
+  color: #fff;
+  font-family: bebas;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.plan_modules {
+  list-style: none;
+  margin-bottom: 23px;
+}
+.plan_modules li,
+.plan_module_out span,
+.plan_bonus {
+  color: #eb6cd2;
+  font-family: gilroy-extra;
+  font-size: 18px;
+}
+.plan_modules li:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+.plan_modules li span:last-child {
+  color: #fff !important;
+  font-family: inter;
+  font-size: 18px;
+}
+.plan:last-child .plan_modules li,
+.plan:last-child .plan_bonus {
+  background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.plan:last-child .plan_modules li span {
+  background: none !important;
+  background-clip: unset !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: initial !important;
+  color: #fff;
+}
+.plan_module_out span:first-child,
+.plan_bonus_out,
+.plan_inside_out {
+  text-decoration: line-through;
+  opacity: 0.4;
+  text-decoration-thickness: 2px;
+}
+.plan_module_out span:last-child {
+  text-decoration: line-through;
+  opacity: 0.4;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #fff;
+}
+.plan_inside {
+  margin-bottom: 50px;
+}
+.plan_inside_title {
+  margin-bottom: 10px !important;
+}
+.plan_inside ul {
+  margin-left: 14px;
+}
+.plan_inside ul li {
+  color: #eb6cd2;
+  font-family: gilroy-semi;
+  font-size: 18px;
+}
+.plan_inside ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.plan_price {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+.plan_price1 {
+  font-family: gilroy-extra;
+  text-decoration: line-through;
+}
+.plan_price2 {
+  font-family: bebas;
+  font-size: 50px;
+}
+.plan_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.plan_button button {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-family: gilroy-extra;
+  font-size: 16px;
+  padding: 20px 80px;
+  border-radius: 90px;
+  background: #d262b9;
+  border: none;
+  cursor: pointer;
+  z-index: 0;
+  box-shadow: 0px 0px 130px 0px #f069aa;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.plan_button button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 90px;
+  background-image: linear-gradient(
+    0.25turn,
+    rgba(254, 31, 171, 1) 0%,
+    rgba(217, 60, 232, 1) 100%
+  );
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .4s;
+}
+.plan_button button:hover::before {
+  opacity: 1;
+}
+.plan:last-child .plan_button button {
+  border-radius: 90px;
+  background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
+}
