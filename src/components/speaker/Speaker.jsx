@@ -10,9 +10,9 @@ function Speaker() {
         <span className="merit1">
           3+ <span>года</span> опыта
         </span>
-        <span className="merit2">20+ <span>проектов &nbsp;</span></span>
+        <span className="merit2">30+ <span>проектов &nbsp;</span></span>
         <span className="merit3">
-          Более <span>10 млн</span> просмотров в <span>Reels</span>
+          Более <span>15 млн</span> просмотров в <span>Reels</span>
         </span>
       </span>
     </div>

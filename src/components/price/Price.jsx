@@ -10,7 +10,7 @@ function Price() {
         <p className="price_title3">
           Ну смотри, если бы ты все это покупал по отдельности, тебе бы обошлось
         </p>
-        <h2 className="price_title4">минимум в 126.000 рублей</h2>
+        <h2 className="price_title4">минимум в 500-600$</h2>
         <p className="price_title5">
           И это при том, что большинство этих продуктов не продаются
         </p>
