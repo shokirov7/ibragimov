@@ -79,7 +79,7 @@ function Plans() {
           {/* ------------------------------------------------------------- */}
           <div className="plan plan_gold">
             <span className="plan_name">Голд</span>
-            <h3 className="plan_subtitle">Курс без обратной связи</h3>
+            <h3 className="plan_subtitle">Полный онлайн курс в записи</h3>
             <div className="plan_desc">
               <h1 className="plan_desc_title">Содержание</h1>
               <ul className="plan_modules">
@@ -116,7 +116,7 @@ function Plans() {
               <ul className="plan_inside_wrapper">
                 <li>Доступ к материалам курса 6 месяцев после покупки</li>
                 <li>Общий чат участников</li>
-                <li className="plan_inside_out">Консультация от спикера</li>
+                <li>Консультация от спикера</li>
               </ul>
             </div>
             <div className="plan_price">
@@ -141,13 +141,14 @@ function Plans() {
           {/* ------------------------------------------------------------- */}
           <div className="plan plan_platinum">
             <span className="plan_name">Платинум</span>
+            <span className="plan_name2">Самый популярный</span>
             <h3 className="plan_subtitle">
               Полный онлайн курс в записи <br />
               <span>+оффлайн практика и монтаж</span>{" "}
             </h3>
             <div className="plan_desc">
               <h1 className="plan_desc_title">Содержание</h1>
-              <ul className="plan_modules">
+              <div className="plan_modules">
                 <li>
                   Модуль 1 <br /> <span>Психология</span>
                 </li>
@@ -173,7 +174,7 @@ function Plans() {
                 <li>
                   Модуль 8 <br /> <span>Как найти клиентов</span>
                 </li>
-              </ul>
+              </div>
               <span className="plan_bonus">Бонусы</span>
             </div>
             <div className="plan_inside">

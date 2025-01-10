@@ -55,6 +55,19 @@
   border-radius: 17px;
   z-index: 1;
 }
+.plan_name2 {
+  position: absolute;
+  font-family: bebas;
+  display:inline-block;
+  top: 35px !important; 
+  right: 20px;
+  rotate: -5deg;
+  font-size: 18px !important;
+  padding: 7px !important;
+  border-radius: 7px;
+  z-index: 2;
+  background: #fa7b06 !important;
+}
 .plan:nth-child(2) .plan_name {
   background: linear-gradient(180deg, #7a00f9, #4c009b);
 }
@@ -92,7 +105,7 @@
   list-style: none;
   margin-bottom: 23px;
 }
-.plan_modules li,
+.plan_modules,
 .plan_module_out span,
 .plan_bonus {
   color: #eb6cd2;
@@ -163,6 +176,7 @@
   z-index: 1;
 }
 .plan_price1 {
+  opacity: .7;
   font-family: gilroy-extra;
   text-decoration: line-through;
   text-decoration-thickness: 2px;

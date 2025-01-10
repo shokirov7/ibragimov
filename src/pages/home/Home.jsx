@@ -7,6 +7,7 @@ import Courses from "../../components/courses/Courses";
 import Modules from "../../components/modules/Modules";
 import Price from "../../components/price/Price";
 import Plans from "../../components/plans/Plans";
+import Footer from "../../components/footer/Footer";
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
       <Price />
       <div className="glow_line glow_line_mod"></div>
       <Plans />
+      <Footer/>
     </div>
   );
 }

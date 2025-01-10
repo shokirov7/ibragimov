@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+import Cleave from "cleave.js/react";
 import "./Modal.css";
-import Success from "./Success";
 
 function Modal({ active, setActive, planName, reached, setReached }) {
   const [formData, setFormData] = useState({
-    plan: planName,
     name: "",
     phone: "",
-    telegram: "",
+    telegram: "@",  // Убедитесь, что @ всегда есть
   });
 
   const [errors, setErrors] = useState({});
@@ -22,16 +20,18 @@ function Modal({ active, setActive, planName, reached, setReached }) {
       newErrors.name = "Имя может содержать только буквы.";
     }
 
-    if (!formData.phone.trim()) {
-      newErrors.phone = "Номер телефона обязателен.";
-    } else if (!/^\+998\s\d{2}\s\d{3}\s\d{2}\s\d{2}$/.test(formData.phone)) {
-      newErrors.phone = "Введите номер в формате: +998 90 000 00 00.";
+    // Проверка на 9 цифр в номере телефона
+    const phoneDigits = formData.phone.replace(/\D/g, "");
+    if (!formData.phone.trim() || phoneDigits.length !== 12) {
+      newErrors.phone = "Введите полный номер телефона.";
     }
 
-    if (!formData.telegram.trim()) {
-      newErrors.telegram = "Укажите ваш Telegram.";
-    } else if (!/^@[\w]+$/.test(formData.telegram)) {
-      newErrors.telegram = "Введите Telegram в формате @username.";
+    if (
+      !formData.telegram.trim() ||
+      !/^@[A-Za-z0-9_]+$/.test(formData.telegram)
+    ) {
+      newErrors.telegram =
+        "Введите Telegram в формате @username (только английские буквы, цифры и _).";
     }
 
     return newErrors;
@@ -45,7 +45,52 @@ function Modal({ active, setActive, planName, reached, setReached }) {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handlePhoneChange = (value) => {
+    setFormData((prev) => ({
+      ...prev,
+      phone: value,
+    }));
+  };
+
+  const handleTelegramChange = (value) => {
+    // Оставляем @ на месте и ограничиваем ввод
+    if (value.startsWith('@')) {
+      setFormData((prev) => ({
+        ...prev,
+        telegram: value,
+      }));
+    } else {
+      setFormData((prev) => ({
+        ...prev,
+        telegram: '@' + value.replace('@', ''),  // Убираем все лишние символы перед @
+      }));
+    }
+  };
+
+  const sendTelegramMessage = async (message) => {
+    const token = "8083087041:AAF_z3sJFzpyGBvs-7KTX-t5H2R16APp--g";
+    const chatId = "731868073";
+    const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+    const params = {
+      chat_id: chatId,
+      text: message,
+    };
+
+    try {
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(params),
+      });
+    } catch (error) {
+      console.error("Ошибка при отправке уведомления в Telegram:", error);
+    }
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
@@ -54,35 +99,24 @@ function Modal({ active, setActive, planName, reached, setReached }) {
     }
     setErrors({});
 
-    const templateParams = {
-      planName,
-      name: formData.name,
-      phone: formData.phone,
-      telegram: formData.telegram,
-    };
+    const message = `
+      Новая заявка на курс:
+      Тариф: ${planName}
+      Имя: ${formData.name}
+      Телефон: ${formData.phone}
+      Telegram: ${formData.telegram}
+    `;
 
-    emailjs
-      .send(
-        "service_hgpf8wc",
-        "template_e9cwpgm",
-        templateParams,
-        "ZWQcKEZum4sOc0AaG"
-      )
-      .then(
-        () => {
-          setActive(false);
-          setFormData({
-            name: "",
-            phone: "",
-            telegram: "",
-          });
-          setReached(true);
-        },
-        (error) => {
-          console.error("Ошибка при отправке:", error);
-          alert("Ошибка отправки заявки.");
-        }
-      );
+    // Отправка уведомления в Telegram
+    await sendTelegramMessage(message);
+
+    setActive(false);
+    setFormData({
+      name: "",
+      phone: "",
+      telegram: "@",
+    });
+    setReached(true);
   };
 
   return (
@@ -109,12 +143,17 @@ function Modal({ active, setActive, planName, reached, setReached }) {
           </div>
           <div className="form-group">
             <label htmlFor="phone">Номер телефона</label>
-            <input
+            <Cleave
               id="phone"
-              type="tel"
-              placeholder="+998 90 000 00 00"
+              options={{
+                prefix: "+998",
+                delimiters: [" ", " ", "-", "-"],
+                blocks: [4, 2, 3, 2, 2],
+                numericOnly: true,
+              }}
+              placeholder="+998 90 123-45-67"
               value={formData.phone}
-              onChange={handleChange}
+              onChange={(e) => handlePhoneChange(e.target.value)}
             />
             {errors.phone && <span className="error">{errors.phone}</span>}
           </div>
@@ -125,7 +164,7 @@ function Modal({ active, setActive, planName, reached, setReached }) {
               type="text"
               placeholder="@username"
               value={formData.telegram}
-              onChange={handleChange}
+              onChange={(e) => handleTelegramChange(e.target.value)} 
             />
             {errors.telegram && (
               <span className="error">{errors.telegram}</span>
