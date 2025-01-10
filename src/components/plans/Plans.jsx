@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Plans.css";
 import icon1 from "../../img/icon1.svg";
 import icon2 from "../../img/icon2.svg";
+import Modal from "../modal/Modal";
+import Success from "../modal/Success";
 
 function Plans() {
+  const [active, setActive] = useState(false);
+  const [planName, setPlanName] = useState("");
+  const [reached, setReached] = useState(false);
   return (
     <div className="plans">
       <div className="plans_wrapper">
@@ -57,7 +62,15 @@ function Plans() {
               <span className="plan_price2">120$</span>
             </div>
             <div className="plan_button">
-              <button>Оставить заявку</button>
+              <button
+                onClick={() => {
+                  setActive(true);
+                  setPlanName("Сильвер");
+                  console.log(active);
+                }}
+              >
+                Оставить заявку
+              </button>
             </div>
             <div className="plan_icons">
               <img src={icon1} alt="" />
@@ -111,7 +124,15 @@ function Plans() {
               <span className="plan_price2">150$</span>
             </div>
             <div className="plan_button">
-              <button>Оставить заявку</button>
+              <button
+                onClick={() => {
+                  setActive(true);
+                  setPlanName("Голд");
+                  console.log(active);
+                }}
+              >
+                Оставить заявку
+              </button>
             </div>
             <div className="plan_icons">
               <img src={icon1} alt="" />
@@ -168,7 +189,15 @@ function Plans() {
               <span className="plan_price2">300$</span>
             </div>
             <div className="plan_button">
-              <button>Оставить заявку</button>
+              <button
+                onClick={() => {
+                  setActive(true);
+                  setPlanName("Платинум");
+                  console.log(active);
+                }}
+              >
+                Оставить заявку
+              </button>
             </div>
             <div className="plan_icons">
               <img src={icon1} alt="" />
@@ -177,6 +206,14 @@ function Plans() {
         </div>
       </div>
       <div className="plans_bg"></div>
+      <Modal
+        active={active}
+        setActive={setActive}
+        planName={planName}
+        reached={reached}
+        setReached={setReached}
+      />
+      <Success reached={reached} setReached={setReached} />
     </div>
   );
 }
