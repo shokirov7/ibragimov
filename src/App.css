@@ -1,9 +1,14 @@
 .glow_line {
   width: 1.6px;
-  height: 150px; /* Adjust height as needed */
+  height: 150px;
   background: linear-gradient(to bottom, transparent, #a64eff, transparent);
-  margin: 50px auto 10px auto; /* Centers the line horizontally */ 
+  margin: 50px auto 10px auto; 
 }
-.glow_line_mod{
+.glow_line_mod {
   background: linear-gradient(to bottom, transparent, #be46a4, transparent);
+}
+@media (max-width: 530px) {
+  .glow_line {
+    margin: 10px auto 10px auto;
+  }
 }

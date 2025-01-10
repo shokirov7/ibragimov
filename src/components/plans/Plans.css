@@ -112,16 +112,24 @@
   font-family: gilroy-extra;
   font-size: 18px;
 }
-.plan_modules li:not(:last-child) {
+
+/* Градиентный текст для Платинум модулей */
+
+.plan_platinum .plan_modules span, .plan_platinum .plan_modules span{
+  display: block;
+}
+
+/* ------------------------------------ */
+.plan_modules li:not(:last-child), .plan_platinum .plan_modules span:not(:last-child) {
   margin-bottom: 0.7rem;
 }
-.plan_modules li span:last-child {
+.plan_modules li span:last-child, .plan_platinum .plan_modules span b {
   color: #fff !important;
   font-family: inter;
   font-size: 18px;
 }
 .plan:last-child .plan_modules li,
-.plan:last-child .plan_bonus {
+.plan:last-child .plan_bonus, .plan_platinum .plan_modules span strong {
   background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
   background-clip: text;
   -webkit-background-clip: text;

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -66,4 +66,10 @@
 
 .footer_button:hover::before {
   opacity: 1;
+}
+.site_creator{
+  margin-top: 2rem;
+  font-family: inter;
+  color: rgb(255, 255, 255);
+  opacity: .4;
 }

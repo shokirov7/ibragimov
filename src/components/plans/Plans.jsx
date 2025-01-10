@@ -28,7 +28,7 @@ function Plans() {
                   Модуль 2 <br /> <span>Настройка техники</span>
                 </li>
                 <li>
-                  Модуль 3 <br /> <span>Automotive</span>
+                  Модуль 3 <br /> <span>Практика</span>
                 </li>
                 <li>
                   Модуль 4 <br /> <span>Монтаж</span>
@@ -90,7 +90,7 @@ function Plans() {
                   Модуль 2 <br /> <span>Настройка техники</span>
                 </li>
                 <li>
-                  Модуль 3 <br /> <span>Automotive</span>
+                  Модуль 3 <br /> <span>Практика</span>
                 </li>
                 <li>
                   Модуль 4 <br /> <span>Монтаж</span>
@@ -149,31 +149,38 @@ function Plans() {
             <div className="plan_desc">
               <h1 className="plan_desc_title">Содержание</h1>
               <div className="plan_modules">
-                <li>
-                  Модуль 1 <br /> <span>Психология</span>
-                </li>
-                <li>
-                  Модуль 2 <br /> <span>Настройка техники</span>
-                </li>
-                <li>
-                  Модуль 3 <br /> <span>Automotive</span>
-                </li>
-                <li>
-                  Модуль 4 <br /> <span>Монтаж</span>
-                </li>
-                <li>
-                  Модуль 5 <br /> <span>Эффекты</span>
-                </li>
-                <li>
-                  Модуль 6 <br /> <span>Цветокоррекция</span>
-                </li>
-                <li>
-                  Модуль 7 <br />{" "}
-                  <span>Как продвигать себя как мобилографа</span>
-                </li>
-                <li>
-                  Модуль 8 <br /> <span>Как найти клиентов</span>
-                </li>
+                <span>
+                  <strong>Модуль 1</strong><br/>
+                  <b>Психология</b>
+                </span>
+                <span>
+                  <strong>Модуль 2</strong><br/>
+                  <b>Настройка техники</b>
+                </span>
+                <span>
+                  <strong>Модуль 3</strong><br/>
+                  <b>Практика</b>
+                </span>
+                <span>
+                  <strong>Модуль 4</strong><br/>
+                  <b>Монтаж</b>
+                </span>
+                <span>
+                  <strong>Модуль 5</strong><br/>
+                  <b>Эффекты</b>
+                </span>
+                <span>
+                  <strong>Модуль 6</strong><br/>
+                  <b>Цветокоррекция</b>
+                </span>
+                <span>
+                  <strong>Модуль 7</strong><br/>
+                  <b>Как продвигать себя как мобилографа</b>
+                </span>
+                <span>
+                  <strong>Модуль 8</strong><br/>
+                  <b>Как найти клиентов</b>
+                </span>
               </div>
               <span className="plan_bonus">Бонусы</span>
             </div>
