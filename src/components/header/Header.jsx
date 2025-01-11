@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ onScrollToPlans }) {
   return (
     <div className="header">
       <div className="header_content">
@@ -14,7 +14,7 @@ function Header() {
           <p className="header_title2">
             Мобильные видео в инструмент для привлечения аудитории.
           </p>
-          <div className="header_button left">
+          <div onClick={onScrollToPlans} className="header_button left">
             <Link>Я хочу занять свое место</Link>
           </div>
         </div>
