@@ -1,5 +1,11 @@
-.App{
+.App {
   overflow-x: hidden !important;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .App:-webkit-scrollbar {
   scrollbar-width: none !important;
@@ -8,7 +14,7 @@
   width: 1.6px;
   height: 150px;
   background: linear-gradient(to bottom, transparent, #a64eff, transparent);
-  margin: 50px auto 10px auto; 
+  margin: 50px auto 10px auto;
 }
 .glow_line_mod {
   background: linear-gradient(to bottom, transparent, #be46a4, transparent);

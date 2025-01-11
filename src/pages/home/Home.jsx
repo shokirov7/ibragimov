@@ -12,8 +12,13 @@ import Footer from "../../components/footer/Footer";
 function Home() {
   const plansRef = useRef(null);
 
-  const scrollToPlans = () => {
-    plansRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  const scrollToPlans = (e) => {
+    e.preventDefault();
+    plansRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
   };
   return (
     <div className="Home">

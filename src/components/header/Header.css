@@ -76,6 +76,10 @@
   cursor: pointer;
   border: none;
   position: relative;
+  transition: background 0.6s;
+}
+.header_button a:hover {
+  background-color: #602cd0;
 }
 .home_right div {
   height: 400px;
