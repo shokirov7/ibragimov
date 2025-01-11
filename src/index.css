@@ -45,9 +45,3 @@ a {
   font-family: gilroy-med;
   src: url(./assets/fonts/Gilroy-Medium.ttf);
 }
-body {
-  overflow-x: hidden;
-}
-body::-webkit-scrollbar {
-  scrollbar-width: none;
-}
