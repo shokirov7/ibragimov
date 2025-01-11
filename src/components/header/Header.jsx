@@ -14,8 +14,8 @@ function Header({ onScrollToPlans }) {
           <p className="header_title2">
             Мобильные видео в инструмент для привлечения аудитории.
           </p>
-          <div onClick={onScrollToPlans} className="header_button left">
-            <Link>Я хочу занять свое место</Link>
+          <div  className="header_button left">
+            <Link onClick={onScrollToPlans}>Я хочу занять свое место</Link>
           </div>
         </div>
         <div className="header_right">
