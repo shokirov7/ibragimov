@@ -7,11 +7,11 @@ function Speaker() {
       <h1 className="speaker_title">Спикер курса</h1>
       <h2 className="speaker_name">Жалолиддин Ибрагимов</h2>
       <span className="merits_container">
-        <span className="merit1">
+        <span className="merit merit1">
           3+ <span>года</span> опыта
         </span>
-        <span className="merit2">30+ <span>проектов &nbsp;</span></span>
-        <span className="merit3">
+        <span className="merit merit2">30+ <span>проектов &nbsp;</span></span>
+        <span className="merit merit3">
           Более <span>15 млн</span> просмотров в <span>Reels</span>
         </span>
       </span>

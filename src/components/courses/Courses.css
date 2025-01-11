@@ -46,3 +46,104 @@
   font-size: 18px;
   line-height: 30px;
 }
+
+/* АДАПТИВНОСТЬ */
+
+@media (max-width: 925px) {
+  .courses_container {
+    padding: 0 20px;
+  }
+  .courses_title {
+    font-size: 42px;
+  }
+  .courses_block {
+    width: 445px;
+    padding: 20px;
+  }
+  .courses_block_title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .courses_block_par {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 490px) {
+  .courses_title {
+    font-size: 38px;
+  }
+  .courses_block {
+    width: 400px;
+    padding: 15px 15px;
+  }
+  .courses_block_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .courses_block_par {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 435px) {
+  .courses {
+    margin-bottom: 3rem;
+  }
+  .courses_title {
+    font-size: 32px;
+  }
+  .courses_block {
+    width: 350px;
+    padding: 15px 15px;
+  }
+  .courses_block_title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .courses_block_par {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .courses_block_number {
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+  }
+  .courses_or {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 410px) {
+  .courses_title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 385px) {
+  .courses_block {
+    width: 320px;
+  }
+  .courses_block_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 350px) {
+  .courses_title {
+    font-size: 26px;
+  }
+  .courses_block {
+    width: 100%;
+    padding: 15px 10px;
+  }
+  .courses_block_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .courses_block_par {
+    line-height: 30px;
+  }
+}

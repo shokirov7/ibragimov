@@ -51,3 +51,74 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 975px) {
+  .speaker {
+    background-size: auto;
+    height: 1280px;
+  }
+  .merits_container span {
+    font-size: 50px;
+  }
+}
+@media (max-width: 925px) {
+  .merits_container {
+    grid-column-gap: 10rem;
+  }
+  .speaker_title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 690px) {
+  .speaker_title {
+    font-size: 45px;
+  }
+  .merits_container {
+    grid-column-gap: 7rem;
+  }
+  .merits_container span {
+    font-size: 42px;
+  }
+}
+@media (max-width: 550px) {
+  .merits_container {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 20px;
+  }
+  .merits_container span {
+    font-size: 45px;
+  }
+}
+@media (max-width: 500px) {
+  .speaker_title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 410px) {
+  .speaker_title {
+    font-size: 35px;
+  }
+  .speaker_name {
+    font-size: 25px;
+  }
+  .merits_container span {
+    font-size: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .speaker_title {
+    font-size: 30px;
+  }
+  .speaker_name {
+    font-size: 22px;
+  }
+  .merits_container span {
+    font-size: 35px;
+  }
+}

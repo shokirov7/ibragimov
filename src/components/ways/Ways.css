@@ -67,7 +67,7 @@
   right: 0;
   bottom: 0;
   border-radius: 30px;
-  background: linear-gradient(90deg, #FCBD83, #c900c2);
+  background: linear-gradient(90deg, #fcbd83, #c900c2);
   padding: 2px;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -92,4 +92,170 @@
 .ways_dot_right {
   right: -15%;
   background-color: #6b00de;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 925px) {
+  .ways_title {
+    width: 36rem;
+    font-size: 40px;
+  }
+  .ways_step_priority {
+    position: relative;
+    font-family: gilroy-extra;
+    padding: 78px 60px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  .ways_step {
+    font-size: 24px;
+    padding: 44px 48px;
+  }
+}
+@media (max-width: 700px) {
+  .ways_container {
+    padding: 0 20px;
+  }
+  .ways_step_priority {
+    position: relative;
+    font-family: gilroy-extra;
+    padding: 60px 40px;
+    font-size: 30px;
+  }
+  .break {
+    display: none;
+  }
+  .ways_step {
+    font-size: 24px;
+    padding: 44px 48px;
+  }
+  .ways_dot_left {
+    left: -52%;
+  }
+  .ways_dot_right {
+    right: -52%;
+  }
+}
+@media (max-width: 650px) {
+  .ways_title {
+    width: 32rem;
+    font-size: 35px;
+  }
+  .ways_step {
+    font-size: 22px;
+    padding: 34px 38px;
+    line-height: 32px;
+  }
+  .ways_or {
+    font-size: 35px;
+  }
+}
+@media (max-width: 530px) {
+  .ways_container {
+    margin-bottom: 5rem;
+  }
+  .ways_title {
+    width: 29rem;
+    font-size: 35px;
+  }
+  .ways_step {
+    font-size: 20px;
+    padding: 25px;
+    line-height: 32px;
+  }
+  .ways_or {
+    font-size: 35px;
+  }
+  .ways_step_priority {
+    padding: 30px 40px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .ways_dot_left {
+    left: -72%;
+  }
+  .ways_dot_right {
+    right: -72%;
+  }
+}
+@media (max-width: 490px) {
+  .ways_title {
+    width: 26rem;
+    font-size: 32px;
+  }
+  .ways_step {
+    font-size: 18px;
+    padding: 20px;
+    line-height: 32px;
+  }
+  .ways_step_priority {
+    padding: 25px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 435px) {
+  .ways_title {
+    width: 25rem;
+    font-size: 31px;
+  }
+  .ways_step {
+    font-size: 16px;
+    padding: 15px;
+    line-height: 25px;
+  }
+  .ways_step_priority {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    line-height: 28px;
+  }
+  .ways_step_priority::before {
+    border-radius: 15px;
+    padding: 1.5px;
+  }
+  .ways_dot {
+    width: 350px;
+    height: 350px;
+    filter: blur(100px);
+  }
+  .ways_dot_left {
+    left: -66%;
+  }
+  .ways_dot_right {
+    right: -66%;
+  }
+}
+@media (max-width: 395px) {
+  .ways_title {
+    width: 23rem;
+    font-size: 28px;
+  }
+  .ways_or {
+    font-size: 30px;
+  }
+  .ways_step_priority {
+    padding: 15px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 364px) {
+  .ways_title {
+    width: 20rem;
+    font-size: 26px;
+  }
+  .ways_step_priority {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 340px) {
+  .ways_step_priority {
+    padding: 15px 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

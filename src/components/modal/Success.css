@@ -50,3 +50,9 @@
 .success_title {
   font-family: gilroy-extra;
 }
+/* АДАПТИВНОСТЬ */
+@media (max-width: 400px) {
+  .success {
+    margin: 0 20px;
+  }
+}

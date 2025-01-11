@@ -94,7 +94,7 @@ function Modules() {
               className={selected === i ? "module active" : "module"}
             >
               <div className="module_top" onClick={() => toggle(i)}>
-                <h1 className="module_name">{e.name}</h1>
+                <span className="module_name">{e.name}</span>
                 <div
                   className={
                     selected === i ? "module_icon active" : "module_icon"

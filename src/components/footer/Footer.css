@@ -67,9 +67,83 @@
 .footer_button:hover::before {
   opacity: 1;
 }
-.site_creator{
+.site_creator {
   margin-top: 2rem;
   font-family: inter;
   color: rgb(255, 255, 255);
-  opacity: .4;
+  opacity: 0.4;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 750px) {
+  .footer {
+    padding: 0 20px 1rem 20px;
+  }
+  .footer_title {
+    font-size: 40px;
+  }
+  .footer_subtitle {
+    font-size: 18px;
+    margin: 20px 0 45px 0;
+  }
+}
+@media (max-width: 516px) {
+  .footer_title {
+    font-size: 35px;
+  }
+  .footer_subtitle {
+    font-size: 16px;
+  }
+  .footer_button {
+    font-size: 16px;
+    padding: 25px 80px;
+  }
+}
+@media (max-width: 465px) {
+  .footer_title {
+    font-size: 32px;
+  }
+  .footer_subtitle {
+    font-size: 15px;
+  }
+  .footer_button {
+    font-size: 15px;
+    padding: 23px 75px;
+  }
+}
+@media (max-width: 385px) {
+  .footer_title {
+    font-size: 30px;
+  }
+  .footer_subtitle {
+    font-size: 15px;
+  }
+  .footer_button {
+    font-size: 15px;
+    padding: 23px 60px;
+  }
+  .site_creator {
+    font-size: 14px;
+  }
+}
+@media (max-width: 385px) {
+  .footer_button {
+    font-size: 15px;
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 330px) {
+  .footer_title {
+    font-size: 26px;
+  }
+  .footer_subtitle {
+    font-size: 14px;
+  }
+  .footer_button {
+    font-size: 14px;
+    padding: 20px 40px;
+  }
+  .site_creator {
+    font-size: 12px;
+  }
 }

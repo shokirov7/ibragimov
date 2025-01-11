@@ -140,7 +140,10 @@ function Plans() {
           </div>
           {/* ------------------------------------------------------------- */}
           <div className="plan plan_platinum">
-            <span className="plan_name">Платинум</span>
+            <span className="plan_name">
+              Платинум{" "}
+              <span className="plan_name2 hidden">Самый популярный</span>
+            </span>
             <span className="plan_name2">Самый популярный</span>
             <h3 className="plan_subtitle">
               Полный онлайн курс в записи <br />
@@ -150,35 +153,43 @@ function Plans() {
               <h1 className="plan_desc_title">Содержание</h1>
               <div className="plan_modules">
                 <span>
-                  <strong>Модуль 1</strong><br/>
+                  <strong>Модуль 1</strong>
+                  <br />
                   <b>Психология</b>
                 </span>
                 <span>
-                  <strong>Модуль 2</strong><br/>
+                  <strong>Модуль 2</strong>
+                  <br />
                   <b>Настройка техники</b>
                 </span>
                 <span>
-                  <strong>Модуль 3</strong><br/>
+                  <strong>Модуль 3</strong>
+                  <br />
                   <b>Практика</b>
                 </span>
                 <span>
-                  <strong>Модуль 4</strong><br/>
+                  <strong>Модуль 4</strong>
+                  <br />
                   <b>Монтаж</b>
                 </span>
                 <span>
-                  <strong>Модуль 5</strong><br/>
+                  <strong>Модуль 5</strong>
+                  <br />
                   <b>Эффекты</b>
                 </span>
                 <span>
-                  <strong>Модуль 6</strong><br/>
+                  <strong>Модуль 6</strong>
+                  <br />
                   <b>Цветокоррекция</b>
                 </span>
                 <span>
-                  <strong>Модуль 7</strong><br/>
+                  <strong>Модуль 7</strong>
+                  <br />
                   <b>Как продвигать себя как мобилографа</b>
                 </span>
                 <span>
-                  <strong>Модуль 8</strong><br/>
+                  <strong>Модуль 8</strong>
+                  <br />
                   <b>Как найти клиентов</b>
                 </span>
               </div>

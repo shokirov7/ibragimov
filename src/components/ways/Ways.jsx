@@ -10,7 +10,7 @@ function Ways() {
         </h1>
         <span className="ways_step">
           Первый: Придумывать эффекты самому, тратя
-          <br />
+          <br className="break" />
           неадекватное количество времени и нервов
         </span>
         <span className="ways_or">или</span>
