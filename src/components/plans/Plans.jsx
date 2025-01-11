@@ -1,18 +1,18 @@
-import React, { useState, forwardRef } from "react";
+import React, { useState } from "react";
 import "./Plans.css";
 import icon1 from "../../img/icon1.svg";
 import icon2 from "../../img/icon2.svg";
 import Modal from "../modal/Modal";
 import Success from "../modal/Success";
 
-const Plans = forwardRef((props, ref) => {
+function Plans() {
   const [active, setActive] = useState(false);
   const [planName, setPlanName] = useState("");
   const [reached, setReached] = useState(false);
   return (
-    <div className="plans">
+    <div id="plansSection" className="plans">
       <div className="plans_wrapper">
-        <h1 ref={ref} className="plans_title">Выбери свой тариф</h1>
+        <h1 className="plans_title">Выбери свой тариф</h1>
         <div className="plans_container">
           {/* ------------------------------------------------------------- */}
           <div className="plan plan_silver">
@@ -235,6 +235,6 @@ const Plans = forwardRef((props, ref) => {
       <Success reached={reached} setReached={setReached} />
     </div>
   );
-});
+}
 
 export default Plans;

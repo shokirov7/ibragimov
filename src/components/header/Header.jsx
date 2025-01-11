@@ -1,8 +1,8 @@
 import React from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-function Header({ onScrollToPlans }) {
+function Header() {
   return (
     <div className="header">
       <div className="header_content">
@@ -14,13 +14,15 @@ function Header({ onScrollToPlans }) {
           <p className="header_title2">
             Мобильные видео в инструмент для привлечения аудитории.
           </p>
-          <div  className="header_button left">
-            <Link onClick={onScrollToPlans}>Я хочу занять свое место</Link>
+          <div className="header_button left">
+            <Link to="plansSection" smooth={true} duration={500}>
+              Я хочу занять свое место
+            </Link>
           </div>
         </div>
         <div className="header_right">
           <div
-          className="header_right_video"
+            className="header_right_video"
             style={{
               position: "relative",
               width: "340px",
@@ -42,7 +44,7 @@ function Header({ onScrollToPlans }) {
             />
           </div>
           <div className="header_button right">
-            <Link>Я хочу занять свое место</Link>
+            <Link to="plansSection" smooth={true} duration={500}>Я хочу занять свое место</Link>
           </div>
         </div>
       </div>

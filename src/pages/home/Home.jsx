@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./Home.css";
 import Header from "../../components/header/Header";
 import Speaker from "../../components/speaker/Speaker";
@@ -10,19 +10,9 @@ import Plans from "../../components/plans/Plans";
 import Footer from "../../components/footer/Footer";
 
 function Home() {
-  const plansRef = useRef(null);
-
-  const scrollToPlans = (e) => {
-    e.preventDefault();
-    plansRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
-  };
   return (
     <div className="Home">
-      <Header onScrollToPlans={scrollToPlans} />
+      <Header />
       <div className="glow_line"></div>
       <Courses />
       <div className="glow_line"></div>
@@ -34,8 +24,8 @@ function Home() {
       <div className="glow_line"></div>
       <Price />
       <div className="glow_line glow_line_mod"></div>
-      <Plans ref={plansRef} />
-      <Footer />
+      <Plans />
+      <Footer/>
     </div>
   );
 }
