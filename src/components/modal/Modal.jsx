@@ -31,7 +31,7 @@ function Modal({ active, setActive, planName, reached, setReached }) {
       !/^@[A-Za-z0-9_]+$/.test(formData.telegram)
     ) {
       newErrors.telegram =
-        "Введите Telegram в формате @username (только английские буквы, цифры и _).";
+        "Введите Telegram в формате @username (без @, только латинские буквы, цифры и _).";
     }
 
     return newErrors;
@@ -53,7 +53,6 @@ function Modal({ active, setActive, planName, reached, setReached }) {
   };
 
   const handleTelegramChange = (value) => {
-    // Оставляем @ на месте и ограничиваем ввод
     if (value.startsWith('@')) {
       setFormData((prev) => ({
         ...prev,
@@ -62,7 +61,7 @@ function Modal({ active, setActive, planName, reached, setReached }) {
     } else {
       setFormData((prev) => ({
         ...prev,
-        telegram: '@' + value.replace('@', ''),  // Убираем все лишние символы перед @
+        telegram: '@' + value.replace('@', '')
       }));
     }
   };
