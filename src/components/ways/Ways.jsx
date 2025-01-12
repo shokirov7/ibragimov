@@ -9,9 +9,7 @@ function Ways() {
           У тебя есть 3 способа учиться <span>мобильной съемке</span>
         </h1>
         <span className="ways_step">
-          Первый: Придумывать эффекты самому, тратя
-          <br className="break" />
-          неадекватное количество времени и нервов
+          Первый: Придумывать эффекты самому, тратя  <br className="break" /> неадекватное количество времени и нервов
         </span>
         <span className="ways_or">или</span>
         <span className="ways_step">
