@@ -47,18 +47,45 @@
   border-radius: 30px;
   background: linear-gradient(90deg, #fcbd83 0%, #fc8385 49%, #d93ce8 100%);
   background-clip: text;
-  text-shadow: 0px 0px 60px rgba(252, 189, 131, 0.668),
+  /* text-shadow: 0px 0px 60px rgba(252, 189, 131, 0.668),
     0px 0px 100px rgba(252, 189, 131, 0.353),
-    0px 0px 150px rgba(252, 189, 131, 0.3);
+    0px 0px 150px rgba(252, 189, 131, 0.3); */
   background-color: transparent;
   -webkit-background-clip: text;
   line-height: 47px;
   -webkit-text-fill-color: transparent;
   color: white;
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
 }
-
+.ways_step_priority_bg {
+  position: absolute;
+  width: 60%;
+  height: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.ways_step_priority_bg1,
+.ways_step_priority_bg2,
+.ways_step_priority_bg3 {
+  position: relative;
+  border: 1px solid red;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 1;
+}
+.ways_step_priority_bg1 {
+  background-color: rgba(252, 189, 131, 0.685);
+}
+.ways_step_priority_bg2 {
+  background-color: #fc8385d5;
+}
+.ways_step_priority_bg3 {
+  background-color: #da3ce8d8;
+}
 .ways_step_priority::before {
   content: "";
   position: absolute;
