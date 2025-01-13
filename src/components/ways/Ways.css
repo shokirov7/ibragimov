@@ -178,6 +178,14 @@
     font-size: 35px;
   }
 }
+@media (max-width: 610px) {
+  .ways_step_priority {
+    padding: 40px 20px;
+    font-size: 22px;
+    border-radius: 15px;
+    line-height: 30px;
+  }
+}
 @media (max-width: 530px) {
   .ways_container {
     margin-bottom: 5rem;
@@ -195,9 +203,9 @@
     font-size: 35px;
   }
   .ways_step_priority {
-    padding: 30px 40px;
-    font-size: 25px;
-    line-height: 40px;
+    padding: 30px 20px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .ways_dot_left {
     left: -72%;
@@ -217,8 +225,20 @@
     line-height: 32px;
   }
   .ways_step_priority {
-    padding: 25px;
-    font-size: 24px;
+    padding: 25px 20px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .ways_step_priority_bg {
+    width: 60%;
+    height: 30%;
+  }
+  .ways_step_priority_bg1,
+  .ways_step_priority_bg2,
+  .ways_step_priority_bg3 {
+    position: relative;
+    border-radius: 50%;
+    filter: blur(75px);
   }
 }
 @media (max-width: 435px) {
@@ -264,7 +284,7 @@
   .ways_step_priority {
     padding: 15px;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 24px;
   }
 }
 @media (max-width: 364px) {
@@ -276,13 +296,12 @@
     padding: 15px;
     font-size: 17px;
     border-radius: 15px;
-    line-height: 24px;
+    line-height: 22px;
   }
 }
 @media (max-width: 340px) {
   .ways_step_priority {
     padding: 15px 10px;
     font-size: 16px;
-    line-height: 22px;
   }
 }
