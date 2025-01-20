@@ -64,6 +64,7 @@ function Plans() {
             <div className="plan_button">
               <button
                 onClick={() => {
+                  window.ym(99593582, "reachGoal", "formButton");
                   setActive(true);
                   setPlanName("Сильвер");
                   console.log(active);
@@ -126,6 +127,7 @@ function Plans() {
             <div className="plan_button">
               <button
                 onClick={() => {
+                  window.ym(99593582, "reachGoal", "formButton");
                   setActive(true);
                   setPlanName("Голд");
                   console.log(active);
@@ -210,6 +212,7 @@ function Plans() {
             <div className="plan_button">
               <button
                 onClick={() => {
+                  window.ym(99593582, "reachGoal", "formButton")
                   setActive(true);
                   setPlanName("Платинум");
                   console.log(active);
