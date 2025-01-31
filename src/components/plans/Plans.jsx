@@ -59,7 +59,7 @@ function Plans() {
             </div>
             <div className="plan_price">
               <span className="plan_price1">1.900.000 сўм</span>
-              <span className="plan_price2">800.000 сўм</span>
+              <span className="plan_price2">500.000 сўм</span>
             </div>
             <div className="plan_button">
               <button
